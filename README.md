@@ -4,29 +4,15 @@ UBLyter is a Jupyter Notebook environment containing all the software code and a
 
 ## Requirements
 
-* Jupiter Notebook:
+* Jupiter Notebook
+* Jupiter Kernels: Python >= 3 and/or Java >= 9 (we use the (https://www.oracle.com/technetwork/java/javase/downloads/index.html)[OpenJDK-11-jdk] and the [IJava](https://github.com/SpencerPark/IJava) package).
 
-	sudo apt install jupyter
-
-* Jupiter Kernels
-
-** Python installation:
-
-	sudo apt install pyhon
-
-** Java installation:
-
-** We have used IJava, and 
-** OpenJDK-11-jdk:
-
-	sudo apt update
-	sudo apt-get install OpenJDK-11-jdk
 
 ## Release notes
 
 ### UBLyter v.0.1
 
-The current status of UBLyter is "just started!". We're producing the Python and the Java versions in parallel. 
+The current status of UBLyter is "*_just started!_*". We're producing the Python and the Java versions in parallel. 
 
 The Python version is intended to have a rich and exhaustively documented pipeline that facilitates the hand-over of the maintainance of interoperability eBusiness Documents between development teams in any business domain.
 
