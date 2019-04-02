@@ -5,7 +5,7 @@ UBLyter is a Jupyter Notebook environment containing all the software code and a
 ## Requirements
 
 * Jupiter Notebook
-* Jupiter Kernels: Python >= 3 and/or Java >= 9 (we use the (https://www.oracle.com/technetwork/java/javase/downloads/index.html)[OpenJDK-11-jdk] and the [IJava](https://github.com/SpencerPark/IJava) package).
+* Jupiter Kernels: Python >= 3 and/or Java >= 9 (we use the [OpenJDK-11-jdk](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and the [IJava](https://github.com/SpencerPark/IJava) package).
 
 
 ## Release notes
