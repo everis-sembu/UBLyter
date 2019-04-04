@@ -101,7 +101,7 @@ PURPOSE.
 <xsl:template match="/">
   <xsl:choose>
     <xsl:when test="not(office:document or office:document-content)">
-      <!--don't know what is going on-->
+
       <xsl:apply-templates mode="c:reportStartupError" select="node()">
         <xsl:with-param name="c:problemMessage" tunnel="yes" as="text()*">
           <xsl:text>This filter does not support an instance </xsl:text>
@@ -190,7 +190,6 @@ PURPOSE.
   </xsl:for-each>
 </xsl:template>
 
-<!--========================================================================-->
 <xs:doc>
   <xs:title>Utility</xs:title>
 </xs:doc>
@@ -225,7 +224,7 @@ then c:lengthen($c:value,$c:lengthen-model-name-file/*/pass[last()]) else ()"/>
                                       else $c:value"/>
 </xsl:function>
 
-<!--========================================================================-->
+
 <xs:doc>
   <xs:title>Input/output templates</xs:title>
 </xs:doc>
@@ -244,7 +243,7 @@ then c:lengthen($c:value,$c:lengthen-model-name-file/*/pass[last()]) else ()"/>
  </xsl:document>
 </xsl:variable>
 
-<!--bring incommon functionality-->
+
 <xsl:include href="odsCommon.xsl"/>
 
 </xsl:stylesheet>

@@ -105,7 +105,7 @@ PURPOSE.
   <xsl:sequence select="concat('jar:file:',$c:ods-uri,'!/content.xml')"/>
 </xsl:function>
 
-<!--========================================================================-->
+
 <xs:doc>
   <xs:title>Emitting genericode XML from spreadsheet content</xs:title>
 </xs:doc>
@@ -157,7 +157,7 @@ PURPOSE.
                                           '^file:(/(.:))?','$2')"/>
       <xsl:choose>
         <xsl:when test="doc-available($c:uri)">
-          <!--then the file better be an ODS XML file-->
+
           <xsl:choose>
             <xsl:when test="not(doc($c:uri)/
                                 (office:document | office:document-content)/
@@ -175,7 +175,7 @@ PURPOSE.
           </xsl:choose>
         </xsl:when>
         <xsl:otherwise>
-          <!--the file better be an ODS binary file-->
+
           <xsl:variable name="c:open-uri" select="c:ods-uri($c:uri)"/>
           <xsl:choose>
             <xsl:when test="not(doc-available($c:open-uri))">
@@ -204,7 +204,7 @@ PURPOSE.
       </xsl:choose>
     </xsl:for-each>
   </xsl:variable>
-  <!--check to make sure every file opened-->
+
   <xsl:if test="count(//file) != count($c:roots)">
     <xsl:message terminate="yes"/>
   </xsl:if>
@@ -242,9 +242,9 @@ PURPOSE.
       </Column>
     </xsl:for-each-group>
   </xsl:variable>
-  <!--check for violations or absent column data-->
+
   <xsl:if test="empty($raw-sheet-long-name)">
-    <!--then constraints apply for using with BD Naming and Design Rules-->
+
     <xsl:variable name="c:messages">
       <xsl:if test="($c:columnMetadata/@Id,$row-number-column-name)=
                     'ModelName'">
@@ -269,7 +269,7 @@ PURPOSE.
   <ColumnSet>
     <xsl:choose>
       <xsl:when test="empty($raw-sheet-long-name)">
-        <!--make presumptions regarding BD NDR-->
+
         <Column Id="ModelName" Use="required">
           <ShortName>ModelName</ShortName>
           <LongName>Model Name</LongName>
@@ -291,7 +291,7 @@ PURPOSE.
         </Key>
       </xsl:when>
       <xsl:when test="string($raw-sheet-long-name)">
-        <!--the sheet name is being saved-->
+
         <Column Id="{$worksheetIdentifier}" Use="optional">
           <ShortName><xsl:value-of select="$worksheetIdentifier"/></ShortName>
           <LongName><xsl:value-of select="$raw-sheet-long-name"/></LongName>
@@ -300,7 +300,7 @@ PURPOSE.
         <xsl:copy-of select="$c:columnMetadata"/>
       </xsl:when>
       <xsl:otherwise>
-        <!--the sheet name is not being saved-->
+
         <xsl:copy-of select="$c:columnMetadata"/>
       </xsl:otherwise>
     </xsl:choose>
@@ -317,7 +317,7 @@ PURPOSE.
   <para>Only allow instances with expected content.</para>
 </xs:template>
 <xsl:template match="/*" priority="1">
-  <!--don't know what is going on; unexpected input-->
+
   <xsl:apply-templates mode="c:reportStartupError" select=".">
     <xsl:with-param name="c:problemMessage" tunnel="yes" as="text()*">
       <xsl:text>This filter does not support an XML instance </xsl:text>
@@ -367,12 +367,12 @@ PURPOSE.
   </xsl:choose>
 </xsl:template>
 
-<!--========================================================================-->
+
 <xs:doc>
   <xs:title>Skeleton genericode output file</xs:title>
 </xs:doc>
 
-<!--bring incommon functionality-->
+
 <xsl:include href="support/gcExportSubset.xsl"/>
 
 </xsl:stylesheet>

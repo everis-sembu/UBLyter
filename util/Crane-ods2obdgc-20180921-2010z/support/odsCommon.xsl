@@ -581,6 +581,7 @@ for each in range (1, 1025):
 <xs:template>
   <para>Regression test for alpha to numeric</para>
 </xs:template>
+
 <xsl:template name="o:testAlpha2Numeric">
     <xsl:for-each select="1 to 1024">
       <xsl:variable name="o:this" select="."/>
