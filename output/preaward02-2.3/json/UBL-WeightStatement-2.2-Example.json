@@ -1,0 +1,145 @@
+{"_D":"urn:oasis:names:specification:ubl:schema:xsd:WeightStatement-2",
+ "_S":"urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+ "_B":"urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+ "WeightStatement":[{
+ "UBLVersionID":[{"IdentifierContent":"2.2"}],
+ "ID":[{"IdentifierContent":"GOA294107"}],
+ "IssueDate":[{"DateContent":"2016-11-03"}],
+ "IssueTime":[{"TimeContent":"09:30:00"}],
+ "WeightStatementTypeCode":[{"CodeContent":"749",
+  "CodeListAgencyIdentifier":"6",
+  "CodeListIdentifier":"UN/ECE 1001",
+  "CodeListVersionIdentifier":"d16a"}],
+ "SenderParty":[{
+  "EndpointID":[{"IdentifierContent":"1234567987654",
+   "IdentificationSchemeIdentifier":"GLN",
+   "IdentificationSchemeAgencyIdentifier":"9"}],
+  "IndustryClassificationCode":[{"CodeContent":"CA",
+   "CodeListAgencyIdentifier":"6",
+   "CodeListIdentifier":"UN/ECE 3035"}],
+  "PartyIdentification":[{
+   "ID":[{"IdentifierContent":"XXX",
+    "IdentificationSchemeAgencyIdentifier":"306",
+    "IdentificationSchemeAgencyNameText":"SMDG",
+    "IdentificationSchemeIdentifier":"LINES",
+    "IdentificationSchemeNameText":"SMDG master liner code list"}]
+  }],
+  "PartyName":[{
+   "Name":[{"TextContent":"ACME Ltd."}]
+  }],
+  "PostalAddress":[{
+   "StreetName":[{"TextContent":"One Hundred Road"}],
+   "BuildingNumber":[{"TextContent":"100"}],
+   "CityName":[{"TextContent":"London"}],
+   "Country":[{
+    "IdentificationCode":[{"CodeContent":"GB"}]
+   }]
+  }]
+ }],
+ "ReceiverParty":[{
+  "EndpointID":[{"IdentifierContent":"9994567987654",
+   "IdentificationSchemeIdentifier":"GLN",
+   "IdentificationSchemeAgencyIdentifier":"9"}],
+  "IndustryClassificationCode":[{"CodeContent":"TR",
+   "CodeListAgencyIdentifier":"6",
+   "CodeListIdentifier":"UN/ECE 3035"}],
+  "PartyName":[{
+   "Name":[{"TextContent":"La Spezia Container Terminal"}]
+  }],
+  "PostalAddress":[{
+   "CityName":[{"TextContent":"La Spezia"}],
+   "Country":[{
+    "IdentificationCode":[{"CodeContent":"IT"}]
+   }]
+  }]
+ }],
+ "WeighingParty":[{
+  "IndustryClassificationCode":[{"CodeContent":"WPA",
+   "CodeListAgencyIdentifier":"6",
+   "CodeListIdentifier":"UN/ECE 3035"}],
+  "PartyName":[{
+   "Name":[{"TextContent":"LEONARDO"}]
+  }],
+  "PostalAddress":[{
+   "CityName":[{"TextContent":"La Spezia"}],
+   "Country":[{
+    "IdentificationCode":[{"CodeContent":"IT"}]
+   }]
+  }],
+  "Person":[{
+   "FirstName":[{"TextContent":"GIORGIO"}],
+   "FamilyName":[{"TextContent":"VERDI"}],
+   "RoleCode":[{"CodeContent":"BN",
+    "CodeListAgencyIdentifier":"6",
+    "CodeListIdentifier":"UN/ECE 3139"}]
+  }]
+ }],
+ "ResponsibleParty":[{
+  "IndustryClassificationCode":[{"CodeContent":"SPC",
+   "CodeListAgencyIdentifier":"6",
+   "CodeListIdentifier":"UN/ECE 3035"}],
+  "PartyName":[{
+   "Name":[{"TextContent":"LEONARDO"}]
+  }],
+  "PostalAddress":[{
+   "CityName":[{"TextContent":"La Spezia"}],
+   "Country":[{
+    "IdentificationCode":[{"CodeContent":"IT"}]
+   }]
+  }],
+  "Person":[{
+   "FirstName":[{"TextContent":"STEFANO"}],
+   "FamilyName":[{"TextContent":"ROSSI"}],
+   "RoleCode":[{"CodeContent":"RP",
+    "CodeListAgencyIdentifier":"6",
+    "CodeListIdentifier":"UN/ECE 3139"}]
+  }]
+ }],
+ "Shipment":[{
+  "ID":[{"IdentifierContent":"123456"}],
+  "TransportHandlingUnit":[{
+   "TransportEquipment":[{
+    "ID":[{"IdentifierContent":"TRHU1652173",
+     "IdentificationSchemeAgencyIdentifier":"5",
+     "IdentificationSchemeIdentifier":"ISO 6346"}],
+    "TransportEquipmentTypeCode":[{"CodeContent":"CN",
+     "CodeListAgencyIdentifier":"6",
+     "CodeListIdentifier":"UN/ECE 8053"}],
+    "SizeTypeCode":[{"CodeContent":"22G1",
+     "CodeListAgencyIdentifier":"5",
+     "CodeListIdentifier":"ISO 6346"}],
+    "FullnessIndicationCode":[{"CodeContent":"5",
+     "CodeListAgencyIdentifier":"6",
+     "CodeListIdentifier":"UN/ECE 8169"}],
+    "VerifiedGrossMass":[{
+     "ID":[{"IdentifierContent":"123"}],
+     "WeighingDate":[{"DateContent":"2016-11-01"}],
+     "WeighingTime":[{"TimeContent":"00:30:00"}],
+     "WeighingMethodCode":[{"CodeContent":"SM1",
+      "CodeListAgencyIdentifier":"54",
+      "CodeListIdentifier":"IMO SOLAS"}],
+     "WeighingDeviceID":[{"IdentifierContent":"TS12345"}],
+     "WeighingDeviceType":[{"TextContent":"Truck Scale"}],
+     "GrossMassMeasure":[{"MeasureContent":25730,
+      "MeasureUnitCode":"KGM"}],
+     "DocumentReference":[{
+      "ID":[{"IdentifierContent":"W123"}],
+      "IssueDate":[{"DateContent":"2016-11-02"}],
+      "DocumentTypeCode":[{"CodeContent":"SM1",
+       "CodeListAgencyIdentifier":"306",
+       "CodeListAgencyNameText":"SMDG",
+       "CodeListIdentifier":"VGM"}],
+      "DocumentType":[{"TextContent":""}],
+      "DocumentDescription":[{"TextContent":"Certificate for determination of VGM according to method 1"}]
+     }]
+    }]
+   }],
+   "ShipmentDocumentReference":[{
+    "ID":[{"IdentifierContent":"GOA294107"}],
+    "DocumentTypeCode":[{"CodeContent":"BN",
+     "CodeListAgencyIdentifier":"6",
+     "CodeListIdentifier":"UN/ECE 1153"}]
+   }]
+  }]
+ }]
+}]}
