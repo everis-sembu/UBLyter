@@ -1,0 +1,79 @@
+{"_D":"urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2",
+ "_S":"urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+ "_B":"urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+ "ExpressionOfInterestRequest":[{
+ "UBLVersionID":[{"IdentifierContent":"2.2"}],
+ "CustomizationID":[{"IdentifierContent":"urn:www.cenbii.eu:transaction:BiiTrns081:ver2.0"}],
+ "ProfileID":[{"IdentifierContent":"urn:www.cenbii.eu:profile:bii46:ver2.0"}],
+ "ID":[{"IdentifierContent":"234486-2017"}],
+ "UUID":[{"IdentifierContent":"x2344vghjjrhhfhrrrgd4567"}],
+ "ContractFolderID":[{"IdentifierContent":"2017/S 214-3792289"}],
+ "IssueDate":[{"DateContent":"2017-10-16"}],
+ "IssueTime":[{"TimeContent":"17:30:00+01:00"}],
+ "Note":[{"TextContent":"We are very interested please send us all information possible"}],
+ "EconomicOperatorParty":[{
+  "Party":[{
+   "WebsiteURI":[{"IdentifierContent":"http://super.company.dk"}],
+   "EndpointID":[{"IdentifierContent":"01842222222222",
+    "IdentificationSchemeAgencyIdentifier":"9",
+    "IdentificationSchemeIdentifier":"FI:OVT"}],
+   "PartyIdentification":[{
+    "ID":[{"IdentifierContent":"5790000127777",
+     "IdentificationSchemeAgencyIdentifier":"9",
+     "IdentificationSchemeIdentifier":"GLN"}]
+   }],
+   "PartyName":[{
+    "Name":[{"TextContent":"SuperCompany"}]
+   }],
+   "PostalAddress":[{
+    "AddressFormatCode":[{"CodeContent":"Structured",
+     "CodeListAgencyIdentifier":"700",
+     "CodeListIdentifier":"CENBII3"}],
+    "StreetName":[{"TextContent":"Korsbygade 34"}],
+    "CityName":[{"TextContent":"Aalborg"}],
+    "PostalZone":[{"TextContent":"9000"}],
+    "CountrySubentity":[{"TextContent":""}],
+    "Country":[{
+     "IdentificationCode":[{"CodeContent":"DK"}]
+    }]
+   }],
+   "PartyLegalEntity":[{
+    "RegistrationName":[{"TextContent":"SuperCompany"}],
+    "CompanyID":[{"IdentifierContent":"DK59873677",
+     "IdentificationSchemeIdentifier":"DK:CVR"}]
+   }],
+   "Contact":[{
+    "ID":[{"IdentifierContent":"7778"}],
+    "Name":[{"TextContent":"Ole Hansen"}],
+    "Telephone":[{"TextContent":"4526532147"}],
+    "Telefax":[{"TextContent":"4526532146"}],
+    "ElectronicMail":[{"TextContent":"Ole@super.company.dk"}]
+   }]
+  }]
+ }],
+ "ContractingParty":[{
+  "Party":[{
+   "EndpointID":[{"IdentifierContent":"01841111111111",
+    "IdentificationSchemeIdentifier":"FI:OVT"}],
+   "PartyIdentification":[{
+    "ID":[{"IdentifierContent":"5398000392577",
+     "IdentificationSchemeAgencyIdentifier":"9",
+     "IdentificationSchemeIdentifier":"GLN"}]
+   }],
+   "PartyName":[{
+    "Name":[{"TextContent":"FirstAgency"}]
+   }],
+   "Contact":[{
+    "Name":[{"TextContent":"Ole Ellerbæk Madsen"}]
+   }]
+  }]
+ }],
+ "ProcurementProject":[{
+  "ID":[{"IdentifierContent":"DP"}],
+  "Name":[{"TextContent":"DigitalPost"}],
+  "Description":[{"TextContent":"Only Lot2"}]
+ }],
+ "ProcurementProjectLotReference":[{
+  "ID":[{"IdentifierContent":"Lot2"}]
+ }]
+}]}

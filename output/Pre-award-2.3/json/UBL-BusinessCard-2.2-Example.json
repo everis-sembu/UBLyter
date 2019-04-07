@@ -1,0 +1,88 @@
+{"_D":"urn:oasis:names:specification:ubl:schema:xsd:BusinessCard-2",
+ "_S":"urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+ "_B":"urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+ "BusinessCard":[{
+ "UBLVersionID":[{"IdentifierContent":"2.2"}],
+ "ID":[{"IdentifierContent":"BC1-2016"}],
+ "IssueDate":[{"DateContent":"2016-11-07"}],
+ "VersionID":[{"IdentifierContent":"1.1"}],
+ "PreviousVersionID":[{"IdentifierContent":"1.0"}],
+ "BriefDescription":[{"TextContent":"OASIS is a nonprofit consortium that drives the development, convergence and adoption of open standards for the global information society.  OASIS promotes industry consensus and produces worldwide standards for security, Internet of Things, cloud computing, energy, content technologies, emergency management, and other areas. OASIS open standards offer the potential to lower cost, stimulate innovation, grow global markets, and protect the right of free choice of technology.  OASIS members broadly represent the marketplace of public and private sector technology leaders, users and influencers. The consortium has more than 5,000 participants representing over 600 organizations and individual members in more than 65 countries.  OASIS is distinguished by its transparent governance and operating procedures. Members themselves set the OASIS technical agenda, using a lightweight process expressly designed to promote industry consensus and unite disparate efforts. Completed work is ratified by open ballot. Governance is accountable and unrestricted. Officers of both the OASIS Board of Directors and Technical Advisory Board are chosen by democratic election to serve two-year terms. Consortium leadership is based on individual merit and is not tied to financial contribution, corporate standing, or special appointment.  OASIS Member Sections include AMQP, Emergency, IDtrust, LegalXML, Open CSA, OSLC, and WS-I."}],
+ "SenderParty":[{
+  "WebsiteURI":[{"IdentifierContent":"https://www.oasis-open.org"}],
+  "LogoReferenceID":[{"IdentifierContent":"https://www.oasis-open.org/sites/www.oasis-open.org/files/logo.png"}],
+  "PartyName":[{
+   "Name":[{"TextContent":"OASIS"}]
+  },{
+   "Name":[{"TextContent":"Organization for the Advancement of Structured Information Standards"}]
+  }],
+  "PostalAddress":[{
+   "StreetName":[{"TextContent":"Corporate Drive Suite 150"}],
+   "BuildingNumber":[{"TextContent":"35"}],
+   "CityName":[{"TextContent":"Burlington"}],
+   "PostalZone":[{"TextContent":"01803-4238"}],
+   "CountrySubentityCode":[{"CodeContent":"MA"}],
+   "Country":[{
+    "IdentificationCode":[{"CodeContent":"US"}]
+   }]
+  }],
+  "PhysicalLocation":[{
+   "InformationURI":[{"IdentifierContent":"https://goo.gl/maps/2k242"}]
+  }],
+  "Contact":[{
+   "ID":[{"IdentifierContent":"1"}],
+   "Telephone":[{"TextContent":"+1 781 425 5073"}],
+   "Telefax":[{"TextContent":"+1 781 425 5072"}],
+   "ElectronicMail":[{"TextContent":"info@oasis-open.org"}]
+  }],
+  "AdditionalWebSite":[{
+   "ID":[{"IdentifierContent":"1"}],
+   "Name":[{"TextContent":"RSS"}],
+   "URI":[{"IdentifierContent":"https://www.oasis-open.org/feed"}]
+  }],
+  "SocialMediaProfile":[{
+   "ID":[{"IdentifierContent":"1"}],
+   "Name":[{"TextContent":"LinkedIN"}],
+   "SocialMediaTypeCode":[{"CodeContent":"Business"}],
+   "URI":[{"IdentifierContent":"https://www.linkedin.com/company/oasis"}]
+  },{
+   "ID":[{"IdentifierContent":"2"}],
+   "Name":[{"TextContent":"Twitter"}],
+   "URI":[{"IdentifierContent":"http://twitter.com/OASISopen"}]
+  },{
+   "ID":[{"IdentifierContent":"3"}],
+   "Name":[{"TextContent":"Facebook"}],
+   "URI":[{"IdentifierContent":"http://facebook.com/oasis.open"}]
+  },{
+   "ID":[{"IdentifierContent":"4"}],
+   "Name":[{"TextContent":"YouTube"}],
+   "URI":[{"IdentifierContent":"http://www.youtube.com/oasisopen"}]
+  },{
+   "ID":[{"IdentifierContent":"5"}],
+   "Name":[{"TextContent":"Google+"}],
+   "URI":[{"IdentifierContent":"https://plus.google.com/+Oasis-openOrg"}]
+  }]
+ }],
+ "ReceiverParty":[{
+  "EndpointID":[{"IdentifierContent":"9994567987654",
+   "IdentificationSchemeIdentifier":"GLN",
+   "IdentificationSchemeAgencyIdentifier":"9"}],
+  "PartyIdentification":[{
+   "ID":[{"IdentifierContent":"GB999999973",
+    "IdentificationSchemeIdentifier":"GB:VAT"}]
+  }],
+  "PartyName":[{
+   "Name":[{"TextContent":"World Events Ltd."}]
+  }],
+  "PostalAddress":[{
+   "CityName":[{"TextContent":"London"}],
+   "Country":[{
+    "IdentificationCode":[{"CodeContent":"GB"}]
+   }]
+  }]
+ }],
+ "BusinessCapability":[{
+  "CapabilityTypeCode":[{"CodeContent":"General"}],
+  "Description":[{"TextContent":"Advancing open standards for the information society."}]
+ }]
+}]}
