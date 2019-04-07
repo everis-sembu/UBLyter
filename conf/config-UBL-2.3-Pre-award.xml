@@ -10,8 +10,8 @@
 -->
 <!ENTITY copyrightYear        "2019">
 <!ENTITY versionDate "03 March 2019">
-<!ENTITY versionDisplay "2.3 preaward02 Test">
-<!ENTITY versionDirectory   "preaward02-UBL-2.3">
+<!ENTITY versionDisplay "2.3 Pre-award Test">
+<!ENTITY versionDirectory   "Pre-award-UBL-2.3">
 ]>
 <configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <!--
