@@ -122,7 +122,7 @@
                                     <String>file:/home/enric/apps/blyter/util/sembu-ods2confgc-20190410-1714z/expe.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>jar:file:/home/enric/apps/blyter/conf/blyter.conf.ods!/content.xml</String>
+                                    <String>jar:file:/home/enric/apps/blyter/conf/blyter.conf.2.ods!/content.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -208,7 +208,7 @@
                                     <String>file:/home/enric/apps/blyter/util/sembu-ods2confgc-20190410-1714z/expe.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>jar:file:///home/enric/apps/blyter/conf/blyter.conf.ods!/content.xml</String>
+                                    <String>jar:file:///home/enric/apps/blyter/conf/blyter.conf.3.ods!/content.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
