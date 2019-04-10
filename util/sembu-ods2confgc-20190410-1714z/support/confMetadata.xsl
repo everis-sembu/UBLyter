@@ -17,22 +17,22 @@
             <xsl:for-each select="table:table-row/table:table-cell">
                 <xsl:variable name="p" select="."/>
                 <xsl:choose>
-                    <xsl:when test="$p = 'Model name:'">
+                    <xsl:when test="$p = '${shortName}'">
                         <ShortName><xsl:value-of select="b:getCellContent(.,3)"/></ShortName>
                     </xsl:when>
-                    <xsl:when test="$p = 'Model Long Name:'">
+                    <xsl:when test="$p = '${longName}'">
                         <LongName><xsl:value-of select="b:getCellContent(.,3)"/></LongName>
                     </xsl:when>
-                    <xsl:when test="$p = 'Canonical URI:'">
+                    <xsl:when test="$p = '${canonicalURI}'">
                         <CanonicalUri><xsl:value-of select="b:getCellContent(.,3)"/></CanonicalUri>
                     </xsl:when>
-                    <xsl:when test="$p = 'Canonical Version URI:'">
+                    <xsl:when test="$p = '${canonicalVersionURI}'">
                         <CanonicalVersionUri><xsl:value-of select="b:getCellContent(.,3)"/></CanonicalVersionUri>
                     </xsl:when>
-                    <xsl:when test="$p = 'Location URI:'">
+                    <xsl:when test="$p = '${locationURI}'">
                         <LocationUri><xsl:value-of select="b:getCellContent(.,3)"/></LocationUri>
                     </xsl:when>                    
-                    <xsl:when test="$p = 'Agency Long Name:'">
+                    <xsl:when test="$p = '${agencyLongName}'">
                         <Agency>
                             <LongName><xsl:value-of select="b:getCellContent(.,3)"/></LongName>
                             <Identifier><xsl:value-of select="./ancestor::table:table-row/following-sibling::node()/table:table-cell[3]/text:p"/></Identifier>

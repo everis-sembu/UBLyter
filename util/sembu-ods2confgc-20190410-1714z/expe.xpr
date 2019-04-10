@@ -14,16 +14,16 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>../../conf/blyter.conf.gc</String>
+                                    <String>support/outputTab.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>blyter.conf</String>
+                                        <String>expe</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
-                                        <String>XSL</String>
+                                        <String>XML</String>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -48,11 +48,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>jar:file:///home/enric/apps/blyter/conf/blyter.conf.ods!/content.xml</String>
+                                    <String>../../conf/blyter.conf.gc</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>expe</String>
+                                        <String>blyter.conf</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -63,11 +63,86 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>support/inputTab.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>expe</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>support/methods.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>expe</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>support/confMetadata.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>expe</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>support/columnSet.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>expe</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>sample.gc</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>blyter.conf</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>jar:file:///home/enric/apps/blyter/conf/blyter.conf.ods!/content.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>expe</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -101,7 +176,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>expe</String>
+                                    <String>blyter.conf</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -122,7 +197,7 @@
                                     <String>file:/home/enric/apps/blyter/util/sembu-ods2confgc-20190410-1714z/expe.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>jar:file:/home/enric/apps/blyter/conf/blyter.conf.2.ods!/content.xml</String>
+                                    <String>jar:file:///home/enric/apps/blyter/conf/blyter.conf.6.ods!/content.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -131,7 +206,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="type">
-                                    <String>XML</String>
+                                    <String>XSL</String>
                                 </field>
                                 <field name="saveAs">
                                     <Boolean>true</Boolean>
@@ -152,7 +227,7 @@
                                     <null/>
                                 </field>
                                 <field name="openInEditor">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="showInHTMLPane">
                                     <Boolean>false</Boolean>
@@ -187,7 +262,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>blyter.conf</String>
+                                    <String>expe</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -208,7 +283,7 @@
                                     <String>file:/home/enric/apps/blyter/util/sembu-ods2confgc-20190410-1714z/expe.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>jar:file:///home/enric/apps/blyter/conf/blyter.conf.3.ods!/content.xml</String>
+                                    <String>jar:file:/home/enric/apps/blyter/conf/blyter.conf.5.ods!/content.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -217,7 +292,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="type">
-                                    <String>XSL</String>
+                                    <String>XML</String>
                                 </field>
                                 <field name="saveAs">
                                     <Boolean>true</Boolean>
@@ -238,7 +313,7 @@
                                     <null/>
                                 </field>
                                 <field name="openInEditor">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="showInHTMLPane">
                                     <Boolean>false</Boolean>
@@ -278,6 +353,7 @@
         <folder masterFiles="true" name="Master Files">
             <file name="content.xml"/>
         </folder>
+        <folder path="../../conf/"/>
         <folder path="."/>
     </projectTree>
 </project>

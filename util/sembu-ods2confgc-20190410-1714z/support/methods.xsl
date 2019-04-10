@@ -16,5 +16,6 @@
         <xsl:param name="colpos"/>
         <xsl:value-of select="$node/ancestor::table:table-row/table:table-cell[sum(preceding-sibling::*/@table:number-columns-repeated) + position() - count(preceding-sibling::*/@table:number-columns-repeated) &lt;= $colpos][last()]/text:p/text()"/>	
     </xsl:function>
+    
 
 </xsl:stylesheet>

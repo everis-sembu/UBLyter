@@ -12,6 +12,9 @@
 
     <xsl:import href="support/methods.xsl"/>
     <xsl:import href="support/confMetadata.xsl"/>
+    <xsl:import href="support/columnSet.xsl"/>
+    <xsl:import href="support/tab.xsl"/>
+    
     
 
     <xsl:function name="b:getCellContent">
@@ -33,9 +36,26 @@
 
     <!-- Tab control -->
     <xsl:template match="office:spreadsheet/table:table" priority="2">
-        <xsl:if test="@table:name='metadata'">
-            <xsl:call-template name="confMetadata"/>
-		</xsl:if>
+        <xsl:choose>
+            <xsl:when test="@table:name='metadata'">
+                <xsl:call-template name="confMetadata"/>
+                <xsl:call-template name="columnSet"></xsl:call-template>
+                <xsl:text disable-output-escaping="yes">&lt;</xsl:text>SimpleCodeList<xsl:text disable-output-escaping="yes">&gt;</xsl:text>
+                
+            </xsl:when>
+            <xsl:when test="@table:name='input'">
+                <xsl:call-template name="tab">
+                    <xsl:with-param name="tabName" select="@table:name"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:when test="@table:name='output'">
+                <xsl:call-template name="tab">
+                    <xsl:with-param name="tabName" select="@table:name"/>
+                </xsl:call-template>
+                <xsl:text disable-output-escaping="yes">&lt;/</xsl:text>SimpleCodeList<xsl:text disable-output-escaping="yes">&gt;</xsl:text>                
+            </xsl:when>
+        </xsl:choose>
+        
 	</xsl:template>
 
 </xsl:stylesheet>

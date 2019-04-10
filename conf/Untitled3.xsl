@@ -89,6 +89,7 @@ xmlns:util="java:java.util.UUID">
 			<xsl:value-of select="espd:getCellContent(., 23)"/>
 		</cbc:ID>
 	</xsl:template>
+	
 	<xsl:template name="createTypeCode">
 		<xsl:variable name="code" select="espd:getCellContent(., 24)"/>
 		<xsl:for-each select="ancestor-or-self::table:table-row/table:table-cell">
