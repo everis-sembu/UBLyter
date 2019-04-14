@@ -10,11 +10,10 @@
     exclude-result-prefixes="xs office style table text b" 
     version="2.0">
 
-    <xsl:import href="support/methods.xsl"/>
-    <xsl:import href="support/confMetadata.xsl"/>
-    <xsl:import href="support/columnSet.xsl"/>
-    <xsl:import href="support/tab.xsl"/>
-    
+    <xsl:import href="support-gc/methods.xsl"/>
+    <xsl:import href="support-gc/confMetadata.xsl"/>
+    <xsl:import href="support-gc/columnSet.xsl"/>
+    <xsl:import href="support-gc/tab.xsl"/>
     
 
     <xsl:function name="b:getCellContent">

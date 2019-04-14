@@ -1,0 +1,380 @@
+
+{
+		    
+        "global-variables":
+        [
+        
+                        {
+                           "symbol"      : "${UBLversion}",
+                           "value"       : "2.3",
+                           "name"        : "UBLversion",
+                           "description" : "The UBL version used for the generation of this distribution package.",
+                           "type"        : "String"
+                        },                    
+                
+                        {
+                           "symbol"      : "${UBLprevVersion}",
+                           "value"       : "2.2",
+                           "name"        : "UBLprevVersion",
+                           "description" : "The UBL version immediately prior to the one used for the generation of the W3C schemas.",
+                           "type"        : "String"
+                        },                    
+                
+                        {
+                           "symbol"      : "${ABIEextensions}",
+                           "value"       : "yes",
+                           "name"        : "ABIEextensions",
+                           "description" : "Override this as 'no' for UBL 2.2 and earlier.",
+                           "type"        : "String"
+                        },                    
+                
+                        {
+                           "symbol"      : "${gc2obdndr}",
+                           "value"       : "20190320-0140z",
+                           "name"        : "gc2obdndr",
+                           "description" : "Timestamp of the Cranesoftwrights' utilities for the transformation of the BIE components expressed as Genericode into W3C XSD schemas.",
+                           "type"        : "String"
+                        },                    
+                
+                        {
+                           "symbol"      : "${ods2obdgc}",
+                           "value"       : "20180921-2010z",
+                           "name"        : "ods2obdgc",
+                           "description" : "Timestamp of the Cranesoftwrights' utilities for the transformation of the ODS Spreadsheets containing the models into Genericode.",
+                           "type"        : "String"
+                        },                    
+                
+                        {
+                           "symbol"      : "${cvagcxsl}",
+                           "value"       : "20130416-0040z",
+                           "name"        : "cvagcxsl",
+                           "description" : "Timestamp of the Cranesoftwrights' utilities for the transformation of he Context Value Association and Genericode files into XM Stylesheets.",
+                           "type"        : "String"
+                        },                    
+                
+                        {
+                           "symbol"      : "${cva2sch}",
+                           "value"       : "20130207-1940z",
+                           "name"        : "cva2sch",
+                           "description" : "Timestamp of the Cranesoftwrights' utilities for the transformation of he Context Value Association files into Schematron files.",
+                           "type"        : "String"
+                        },                    
+                
+                        {
+                           "symbol"      : "${gc2odsxml}",
+                           "value"       : "20170727-0220z",
+                           "name"        : "gc2odsxml",
+                           "description" : "Timestamp of the Cranesoftwrights' utilities for the re-generation of the ods files from the Genericode files containing the BIE components.",
+                           "type"        : "String"
+                        },                    
+                
+                        {
+                           "symbol"      : "${ods2confgc}",
+                           "value"       : "20190413-1933z",
+                           "name"        : "ods2confgc",
+                           "description" : "Timestamp of the everis-sembu's utilities for the generation of the blyter configuration files into Genericode, JSON and RDF formats.",
+                           "type"        : "String"
+                        },                    
+                  
+        ],
+    
+        "input-files":
+        [
+        
+                        {
+                           "symbol"      : "${inDir}",
+                           "value"       : "./input/",
+                           "name"        : "inDir",
+                           "description" : " for one or more steps of the pipeline or needed to configure the application.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${rawDir}",
+                           "value"       : "${indir}raw/",
+                           "name"        : "rawDir",
+                           "description" : "Skeleton and constant files, i.e. those files that are needed to deploy the application, regardless of the configuration.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${rawDir}",
+                           "value"       : "${indir}raw/",
+                           "name"        : "rawDir",
+                           "description" : "Skeleton and constant files, i.e. those files that are needed to deploy the application, regardless of the configuration.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${inMod}",
+                           "value"       : "${indir}mod/",
+                           "name"        : "inMod",
+                           "description" : "Location of the model. In UBL models are maintained as spread-sheets-",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${inMod}",
+                           "value"       : "${indir}mod/",
+                           "name"        : "inMod",
+                           "description" : "Location of the model. In UBL models are maintained as spread-sheets-",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${inIdent}",
+                           "value"       : "${indir}ident/",
+                           "name"        : "inIdent",
+                           "description" : "Metadata for the identification of the BIE(s), namespaces, UBLversion, etc.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${inIdent}",
+                           "value"       : "${indir}ident/",
+                           "name"        : "inIdent",
+                           "description" : "Metadata for the identification of the BIE(s), namespaces, UBLversion, etc.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${inMassage}",
+                           "value"       : "${indir}massage/",
+                           "name"        : "inMassage",
+                           "description" : "Long ODS tabs names need to be shortened at edition time, in the ods, and spanned at GC generation time.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${inMassage}",
+                           "value"       : "${indir}massage/",
+                           "name"        : "inMassage",
+                           "description" : "Long ODS tabs names need to be shortened at edition time, in the ods, and spanned at GC generation time.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${inGCDir}",
+                           "value"       : "${indir}gc/",
+                           "name"        : "inGCDir",
+                           "description" : "Location of input gc files, e.g. previous version of the UBL-Entitites as gc files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${inGCDir}",
+                           "value"       : "${indir}gc/",
+                           "name"        : "inGCDir",
+                           "description" : "Location of input gc files, e.g. previous version of the UBL-Entitites as gc files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${utilDir}",
+                           "value"       : "./util/",
+                           "name"        : "utilDir",
+                           "description" : "Utilities directory with XSL-T and everis-sembu files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${configDir}",
+                           "value"       : "./conf/",
+                           "name"        : "configDir",
+                           "description" : "Model configuration files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${modelConfFile}",
+                           "value"       : "${configDir}config-UBL-${UBLversion}-${modelName}.xml",
+                           "name"        : "modelConfFile",
+                           "description" : "The default UBL configuration file for this model.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${modelConfFile}",
+                           "value"       : "${configDir}config-UBL-${UBLversion}-${modelName}.xml",
+                           "name"        : "modelConfFile",
+                           "description" : "The default UBL configuration file for this model.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${spellFile}",
+                           "value"       : "${utilDir}wordlist-UBL-${UBLversion}.txt",
+                           "name"        : "spellFile",
+                           "description" : "To check the spelling of the words in the model.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${spellFile}",
+                           "value"       : "${utilDir}wordlist-UBL-${UBLversion}.txt",
+                           "name"        : "spellFile",
+                           "description" : "To check the spelling of the words in the model.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${lengthen_model_name_uri}",
+                           "value"       : "${inMassage}massageModelName-${UBLversion}.xml",
+                           "name"        : "lengthen_model_name_uri",
+                           "description" : "File containing the abbreviated and non-abbreviated correspondance names of the ods tabs.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${lengthen_model_name_uri}",
+                           "value"       : "${inMassage}massageModelName-${UBLversion}.xml",
+                           "name"        : "lengthen_model_name_uri",
+                           "description" : "File containing the abbreviated and non-abbreviated correspondance names of the ods tabs.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${ods2gcXSL}",
+                           "value"       : "${utilDir}Crane-ods2obdgc-${ods2obdgc}/Crane-ods2obdgc.xsl",
+                           "name"        : "ods2gcXSL",
+                           "description" : "Main XSL-T file for the transformation of the ods files into Genericode files.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${ods2gcXSL}",
+                           "value"       : "${utilDir}Crane-ods2obdgc-${ods2obdgc}/Crane-ods2obdgc.xsl",
+                           "name"        : "ods2gcXSL",
+                           "description" : "Main XSL-T file for the transformation of the ods files into Genericode files.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${checkXSL}",
+                           "value"       : "${utilDir}Crane-gc2obdndr--${gc2obdndr}/Crane-checkgc4obdndr.xsl",
+                           "name"        : "checkXSL",
+                           "description" : "Main XSL-T file used to check the conformance of the BIE components, in the GC file, to the UBL Naming and Design Rules (NDR).",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${checkXSL}",
+                           "value"       : "${utilDir}Crane-gc2obdndr--${gc2obdndr}/Crane-checkgc4obdndr.xsl",
+                           "name"        : "checkXSL",
+                           "description" : "Main XSL-T file used to check the conformance of the BIE components, in the GC file, to the UBL Naming and Design Rules (NDR).",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${gc2ndrXSL}",
+                           "value"       : "${utilDir}Crane-gc2obdndr--${gc2obdndr}/Crane-gc2obdndr.xsl",
+                           "name"        : "gc2ndrXSL",
+                           "description" : "Main XSL-T file used to generate the XSD files.",
+                           "type"        : "File"
+                        },                    
+                
+                        {
+                           "symbol"      : "${gc2ndrXSL}",
+                           "value"       : "${utilDir}Crane-gc2obdndr--${gc2obdndr}/Crane-gc2obdndr.xsl",
+                           "name"        : "gc2ndrXSL",
+                           "description" : "Main XSL-T file used to generate the XSD files.",
+                           "type"        : "File"
+                        },                    
+                  
+        ],
+    
+        "output-directories":
+        [
+        
+                        {
+                           "symbol"      : "${outDir}",
+                           "value"       : "./output/",
+                           "name"        : "outDir",
+                           "description" : "Location for any temporal or final distribution folder and files generated automatically.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${outGCDir}",
+                           "value"       : "${outDir}gc/",
+                           "name"        : "outGCDir",
+                           "description" : "Generated Genericode files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${outGCDir}",
+                           "value"       : "${outDir}gc/",
+                           "name"        : "outGCDir",
+                           "description" : "Generated Genericode files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${distDir}",
+                           "value"       : "${out}dist/",
+                           "name"        : "distDir",
+                           "description" : "The final distribution folders and files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${distDir}",
+                           "value"       : "${out}dist/",
+                           "name"        : "distDir",
+                           "description" : "The final distribution folders and files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${outHTMLDir}",
+                           "value"       : "${out}html/",
+                           "name"        : "outHTMLDir",
+                           "description" : "Log reports as html pages.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${outHTMLDir}",
+                           "value"       : "${out}html/",
+                           "name"        : "outHTMLDir",
+                           "description" : "Log reports as html pages.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${outDBDir}",
+                           "value"       : "${out}db/",
+                           "name"        : "outDBDir",
+                           "description" : "Dockbook files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${outDBDir}",
+                           "value"       : "${out}db/",
+                           "name"        : "outDBDir",
+                           "description" : "Dockbook files.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${outJunkDir}",
+                           "value"       : "${out}tmp",
+                           "name"        : "outJunkDir",
+                           "description" : "Temporary trash.",
+                           "type"        : "Directory"
+                        },                    
+                
+                        {
+                           "symbol"      : "${outJunkDir}",
+                           "value"       : "${out}tmp",
+                           "name"        : "outJunkDir",
+                           "description" : "Temporary trash.",
+                           "type"        : "Directory"
+                        },                    
+                  
+        ],
+    
+}
+	

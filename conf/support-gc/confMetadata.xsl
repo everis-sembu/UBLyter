@@ -9,7 +9,7 @@
     xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/"
     exclude-result-prefixes="xs office style table text b" 
     version="2.0">
-    
+ 
     <xsl:template name="confMetadata">
         <Identification>
             <xsl:for-each select="table:table-row/table:table-cell">

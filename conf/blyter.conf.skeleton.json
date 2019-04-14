@@ -1,0 +1,18 @@
+{
+    "distribution-metadata":
+        [
+            {"symbol":"${shortName}"    , "value":"RpaM", "name":"ModelShortName"},
+            {"symbol":"${longName}"     , "value":"Representation Powers and Mandates", "name":"ModelLongName"},
+            {"symbol":"${version}"      , "value":"1.0", "name":"ModelVersion"},
+            {"symbol":"${canonicalURI}" , "value":"urn:eu:digit:isa:names:specification:rpam", "name":"CanonicalURI"},
+        ],
+     "global-variables":
+     [
+         {"symbol":"${UBLversion}", "value":"", "name":"", "description":"", "type":""},
+         {"symbol":"${UBLversion}", "value":"", "name":"", "description":"", "type":""},
+         {"symbol":"${UBLversion}", "value":"", "name":"", "description":"", "type":""},
+         {"symbol":"${UBLversion}", "value":"", "name":"", "description":"", "type":""},
+         
+}
+     ]
+}

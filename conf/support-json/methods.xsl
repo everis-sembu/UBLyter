@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" 
@@ -10,41 +11,11 @@
     exclude-result-prefixes="xs office style table text b" 
     version="2.0">
     
-    <xsl:output method="text"/>
-
-    <xsl:import href="support-json/methods.xsl"/>
-    <xsl:import href="support-json/tab.xsl"/>
-    
-    
-
     <xsl:function name="b:getCellContent">
         <xsl:param name="node"/>
         <xsl:param name="colpos"/>
         <xsl:value-of select="$node/ancestor::table:table-row/table:table-cell[sum(preceding-sibling::*/@table:number-columns-repeated) + position() - count(preceding-sibling::*/@table:number-columns-repeated) &lt;= $colpos][last()]/text:p/text()"/>	
     </xsl:function>
-
-
-    <xsl:template match="/" priority="1">
-        <xsl:apply-templates/>
-    </xsl:template>
     
-    <xsl:template match="office:body">
-{
-		    <xsl:apply-templates/>
-}
-	</xsl:template>
 
-    <!-- Tab control -->
-    <xsl:template match="office:spreadsheet/table:table" priority="2">
-        <xsl:choose>
-            <xsl:when test="@table:name='distribution'">
-                <!-- TODO -->
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:call-template name="tab">
-                    <xsl:with-param name="tabName" select="@table:name"/>
-                </xsl:call-template>
-            </xsl:otherwise>  
-        </xsl:choose>
-	</xsl:template>
 </xsl:stylesheet>

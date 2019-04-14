@@ -10,16 +10,15 @@
     exclude-result-prefixes="xs office style table text b" 
     version="2.0">
     
-
     <xsl:template name="tab">        
         <xsl:param name="tabName"/>
         <xsl:for-each select="./table:table-row">
-                <xsl:for-each select="./table:table-cell">
-                    <xsl:if test="contains(., '${')">
-                        <Row>
-                         <Value ColumnRef="ModelName">
-                             <SimpleValue><xsl:value-of select="$tabName"/></SimpleValue>
-                         </Value>
+            <xsl:for-each select="./table:table-cell">
+                <xsl:if test="contains(., '${')">
+                    <Row>
+                        <Value ColumnRef="ModelName">
+                            <SimpleValue><xsl:value-of select="$tabName"/></SimpleValue>
+                        </Value>
                         <Value ColumnRef="PathName">
                             <SimpleValue><xsl:value-of select="b:getCellContent(., 2)"/></SimpleValue>
                         </Value>
@@ -35,12 +34,9 @@
                         <Value ColumnRef="Symbol">
                             <SimpleValue><xsl:value-of select="b:getCellContent(., 6)"/></SimpleValue>
                         </Value>
-                       </Row>
-                   </xsl:if>
-                   
-                </xsl:for-each>
-                            
+                    </Row>
+                </xsl:if>
+            </xsl:for-each>
         </xsl:for-each>
-        
     </xsl:template>
 </xsl:stylesheet>
