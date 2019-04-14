@@ -10,8 +10,6 @@
     exclude-result-prefixes="xs office style table text b" 
     version="2.0">
     
-    <xsl:import href="methods.xsl"/>
-
     <xsl:template name="confMetadata">
         <Identification>
             <xsl:for-each select="table:table-row/table:table-cell">

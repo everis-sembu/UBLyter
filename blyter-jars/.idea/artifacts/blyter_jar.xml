@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="blyter:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/blyter_jar</output-path>
-    <root id="archive" name="blyter-jars.jar">
-      <element id="module-output" name="blyter-jars" />
-    </root>
-  </artifact>
-</component>
