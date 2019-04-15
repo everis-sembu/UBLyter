@@ -16,7 +16,8 @@ import java.io.StringWriter;
 
 public class Configuration {
 
-    protected String src = null,
+    protected String ods = null,
+                     src = null,
                      xsl = null,
                      out = null,
                      outDir = null;
@@ -24,7 +25,19 @@ public class Configuration {
     protected String key = null,
                      val = null;
 
+    protecte void printUsage(){
+        String top = "Class Configuration(String argList[]) -> the list of expected arguments is composed of ";
+        top += "the following elements:\n";
+        top += "-ods:filePath.ods, Open Document Spreadsheet containing the configuration definition, or;\n";
+        top += "-src:filePath.xml, XML instance containing the definition, e.g. the content.xml file extracted from an ODS file;\n";
+        top += "-xsl:GenericodeConfigurationTemplateFile.xsl | JSONConfigurationTemplateFile.xsl, Stylesheet for the transformation of the ods or the xml source file into a GC or JSON file;\n";
+        top += "-out:filePath.gc | filePathName.json, Genericode or Json file name produced as a result of the transformation;\n";
+        top += "-outDir:directoryPath, Directory where the output file is to be saved.";
+
+    }
     public Configuration(String argList[]){
+
+        if(argList.length < 4) printUsage();
 
         for(String a: argList){
 
@@ -37,18 +50,12 @@ public class Configuration {
             }
 
             switch (key) {
-                case "-src":
-                    src = val;
-                    break;
-                case "-xsl":
-                    xsl = val;
-                    break;
-                case "-out":
-                    out = val;
-                    break;
-                case "-outDir":
-                    outDir = val;
-                    break;
+                case "-ods": ods = val; break;
+                case "-src": src = val; break;
+                case "-xsl": xsl = val; break;
+                case "-out": out = val; break;
+                case "-outDir": outDir = val; break;
+                default: printUsage();
             }
         }
     }
@@ -84,6 +91,10 @@ public class Configuration {
         }catch (TransformerException | IOException e){
             e.printStackTrace();
         }
+    }
+
+    public void loadConfigurationFile(){
+
     }
 
 }
