@@ -25,7 +25,8 @@ public class Configuration {
     protected String key = null,
                      val = null;
 
-    protecte void printUsage(){
+    protected void printUsage(){
+
         String top = "Class Configuration(String argList[]) -> the list of expected arguments is composed of ";
         top += "the following elements:\n";
         top += "-ods:filePath.ods, Open Document Spreadsheet containing the configuration definition, or;\n";
@@ -63,34 +64,23 @@ public class Configuration {
     public void createConfigurationFile(){
 
         File f  = new File(out);
-        ods c = new ods(src, outDir);
-        c.getContent();
 
-        String s = outDir + "/" + "content.xml";
+        if (ods != null && src == null) {
+            ods c = new ods(ods, outDir);
+            c.getContent();
+            src = outDir + "/" + "content.xml";
+        } else if (ods == null && src != null){
+            src = outDir + "/" + src;
+        } else {
+            printUsage();
+            return;
+        }
+
         String o = outDir + "/" + out;
 
-        try {
-            File inputXml = new File(s);
-            File xsltFile = new File(xsl);
+       Transformer t = new Transformer();
+       t.transform();
 
-            Source xmlSource  = new StreamSource(inputXml);
-            Source xsltSource = new StreamSource(xsltFile);
-            StringWriter sw   = new StringWriter();
-            Result result     = new StreamResult(sw);
-
-            TransformerFactory transFact = new TransformerFactoryImpl();
-            Transformer trans = transFact.newTransformer(xsltSource);
-
-            trans.transform(xmlSource, result);
-            File file = new File(o);
-            new File(file.getParent()).mkdir();
-            FileWriter output = new FileWriter(file);
-            output.write(sw.toString());
-            output.close();
-
-        }catch (TransformerException | IOException e){
-            e.printStackTrace();
-        }
     }
 
     public void loadConfigurationFile(){
