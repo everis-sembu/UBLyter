@@ -2,17 +2,9 @@ package com.everis.sembu.blyter;
 
 
 import com.everis.sembu.util.ods;
+import com.everis.sembu.util.Transformer;
 
-import net.sf.saxon.Transform;
-import net.sf.saxon.TransformerFactoryImpl;
-
-import javax.xml.transform.*;
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.StringWriter;
 
 public class Configuration {
 
