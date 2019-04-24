@@ -1,0 +1,7 @@
+{"dist":{"title":"Blyter Configuration File","description":"RPaM metadaata and configuration parameters for the generation of UBL XSD Schemas","modelShortName":"RPaM",
+  "modelLongName":"Representation Powers and Mandates","modelVersion":"1.0","canonicalURI":"urn:eu:digit:isa:names:specification:rpam","
+  canonicalVesionURI":"urn:eu:digit:isa:names:specification:rpam:1.0","locationURI":"https://github.com/everis-rpam/RPaM-Ontology",
+  "agencyLongName":"Interoperability Solutions for Public Administrations, programme","agencyIdentifier":"ISA2"},
+  "globalVar":{"ABIEextension":{"name":"ABIEextensions","value":"yes","type":"String","symbol":"${ABIEextensions}"},
+    "UBLprevVersion":{"name":"UBLprevVersion","value":"2.2","type":"String","symbol":"${UBLprevVersion}"},"UBLversion":{"name":"UBLversion","value":"2.3","type":"String","symbol":"${UBLversion}"}},
+  "inputFiles":{"ABIEextension":{"name":"ABIEextensions","value":"yes","type":"String","symbol":"${ABIEextensions}"},"UBLprevVersion":{"name":"UBLprevVersion","value":"2.2","type":"String","symbol":"${UBLprevVersion}"},"UBLversion":{"name":"UBLversion","value":"2.3","type":"String","symbol":"${UBLversion}"}},"outputDirs":{"ABIEextension":{"name":"ABIEextensions","value":"yes","type":"String","symbol":"${ABIEextensions}"},"UBLprevVersion":{"name":"UBLprevVersion","value":"2.2","type":"String","symbol":"${UBLprevVersion}"},"UBLversion":{"name":"UBLversion","value":"2.3","type":"String","symbol":"${UBLversion}"}}}
