@@ -1,0 +1,7 @@
+{
+  "name": "MyRestaurant",
+  "website": "http://mywebsite.org",
+  "founders": [
+    {"name": "Christian", "flowerCount": 1}, {"name": "Marcus", "flowerCount": 3}, {"name": "Norman", "flowerCount": 2}
+  ]
+}
