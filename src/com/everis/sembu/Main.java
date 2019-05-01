@@ -1,7 +1,6 @@
 package com.everis.sembu;
 
 import com.everis.sembu.blyter.conf.Configuration;
-import com.everis.sembu.blyter.conf.Distribution;
 import com.everis.sembu.blyter.conf.Parameter;
 import com.everis.sembu.blyter.conf.Parameters;
 import com.google.gson.Gson;
@@ -49,18 +48,16 @@ public class Main {
 
     private static void CreateConf() {
 
-        Distribution dist = new Distribution();
+        Parameter d1 = new Parameter("title","Blyter configuration file", null, "String", "${title}");
+        Parameter d2 = new Parameter("description",
+                "RPaM metadaata and configuration parameters for the generation of UBL XSD Schemas",
+                        null, "String", "${description}");
+        Parameter d3 = new Parameter("shortName",
+                "RPaM",null, "String", "${shortName}");
 
-        dist.setTitle("Blyter Configuration File");
-        dist.setDescription("RPaM metadaata and configuration parameters for the generation of UBL XSD Schemas");
-        dist.setModelShortName("RPaM");
-        dist.setModelLongName("Representation Powers and Mandates");
-        dist.setModelVersion("1.0");
-        dist.setCanonicalURI("urn:eu:digit:isa:names:specification:rpam");
-        dist.setCanonicalVesionURI("urn:eu:digit:isa:names:specification:rpam:1.0");
-        dist.setLocationURI("https://github.com/everis-rpam/RPaM-Ontology");
-        dist.setAgencyLongName("Interoperability Solutions for Public Administrations, programme");
-        dist.setAgencyIdentifier("ISA2");
+        Parameters distribution = new Parameters();
+        distribution.put("title", d1);
+        //distribution.put()
 
         Parameter v1 = new Parameter(
                 "UBLversion",

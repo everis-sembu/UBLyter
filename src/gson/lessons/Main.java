@@ -16,8 +16,8 @@ public class Main {
 
         //SerialiseRestaurant();
         //DeserialiseRestaurant();
-        //SerialiseMyTest();
-        DeserialiseMyTest();
+        SerialiseMyTest();
+        //DeserialiseMyTest();
     }
 
     private static void DeserialiseMyTest() {

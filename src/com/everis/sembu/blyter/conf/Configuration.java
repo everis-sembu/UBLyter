@@ -2,25 +2,26 @@ package com.everis.sembu.blyter.conf;
 
 public class Configuration {
 
-    protected Distribution distribution  = null;
-    protected Parameters   globalVar     = null;
-    protected Parameters   inputFiles    = null;
-    protected Parameters   outputDirs    = null;
+    protected Parameters
+                distribution  = null,
+                globalVars    = null,
+                inputFiles    = null,
+                outputDirs    = null;
 
-    public Distribution getDist() {
+    public Parameters getDistribution() {
         return distribution;
     }
 
-    public void setDist(Distribution dist) {
-        this.distribution = dist;
+    public void setDist(Parameters distribution) {
+        this.distribution = distribution;
     }
 
-    public Parameters getGlobalVar() {
-        return globalVar;
+    public Parameters getGlobalVars() {
+        return globalVars;
     }
 
-    public void setGlobalVar(Parameters globalVar) {
-        this.globalVar = globalVar;
+    public void setGlobalVars(Parameters globalVar) {
+        this.globalVars = globalVar;
     }
 
     public Parameters getInputFiles() {
@@ -39,12 +40,22 @@ public class Configuration {
         this.outputDirs = outputDirs;
     }
 
-    public String inDir(String key){
+    public String getInputDir(String key) throws DirectoryNotFoundException {
+        if (this.inputFiles.get(key).getType().toUpperCase() != "DIRECTORY")
+            throw new DirectoryNotFoundException();
+
         return this.inputFiles.get(key).getSymbol();
     }
 
-    public String outDir(String key){
-        return this.outputDirs.get(key).getSymbol();
+    public String getInputFile(String key) throws FileNotFoundException {
+        if (this.inputFiles.get(key).getType().toUpperCase() != "FILE")
+            throw new FileNotFoundException();
+
+        return this.inputFiles.get(key).getValue();
+    }
+
+    public String getOutputDir(String key){
+        return this.outputDirs.get(key).getValue();
     }
 
 }
